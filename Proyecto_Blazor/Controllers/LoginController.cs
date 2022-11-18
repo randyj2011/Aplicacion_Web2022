@@ -11,19 +11,20 @@ namespace Proyecto_Blazor.Controllers
 {
     public class LoginController : Controller
     {
-        private readonly Config _confuguracion;
+        private readonly Config _configuracion;
         private ILoginRepositorio _loginRepositorio;
         private IUsuarioRepositorio _usuarioRepositorio;
 
         public LoginController(Config config)
         {
-            _confuguracion = config;
+            _configuracion = config;
             _loginRepositorio= new LoginRepositorio(config.CadenaConexion);
             _usuarioRepositorio = new UsuarioRepositorio(config.CadenaConexion);
         }
 
         [HttpPost("/account/login")]
         public async Task<IActionResult> Login(Login login)
+
         {
             string rol = string.Empty;
             try
@@ -32,7 +33,7 @@ namespace Proyecto_Blazor.Controllers
 
                 if (usuarioValido)
                 {
-                    Usuario user = await _usuarioRepositorio.GetPorCodigo(login.Usuario);
+                    Usuario user = await _usuarioRepositorio.GetPorCodigo(login.Codigo);
                     if (user.EstaActivo)
                     {
                         rol = user.Rol;
@@ -55,11 +56,24 @@ namespace Proyecto_Blazor.Controllers
                         return LocalRedirect("/login/El usuario no esta activo");
                     }
                 }
+                else
+                {
+                    return LocalRedirect("/login/Datos de usuario invalidos");
+
+                }
             }
             catch (Exception ex)
             {
 
             }
+            return LocalRedirect("/");
+        }
+
+        [HttpGet("/account/logout")]
+        public async Task<IActionResult> Logout()
+        {
+            await HttpContext.SignOutAsync(CookieAuthenticationDefaults.AuthenticationScheme);
+            return LocalRedirect("/login");
         }
     }
 }
