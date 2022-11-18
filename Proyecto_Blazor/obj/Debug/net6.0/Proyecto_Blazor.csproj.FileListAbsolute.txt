@@ -1,0 +1,8 @@
+C:\Users\Harold\Documents\GitHub\Proyecto_IIIUnidad\Aplicacion_Web2022\Proyecto_Blazor\obj\Debug\net6.0\Proyecto_Blazor.csproj.AssemblyReference.cache
+C:\Users\Harold\Documents\GitHub\Proyecto_IIIUnidad\Aplicacion_Web2022\Proyecto_Blazor\obj\Debug\net6.0\Proyecto_Blazor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Harold\Documents\GitHub\Proyecto_IIIUnidad\Aplicacion_Web2022\Proyecto_Blazor\obj\Debug\net6.0\Proyecto_Blazor.AssemblyInfoInputs.cache
+C:\Users\Harold\Documents\GitHub\Proyecto_IIIUnidad\Aplicacion_Web2022\Proyecto_Blazor\obj\Debug\net6.0\Proyecto_Blazor.AssemblyInfo.cs
+C:\Users\Harold\Documents\GitHub\Proyecto_IIIUnidad\Aplicacion_Web2022\Proyecto_Blazor\obj\Debug\net6.0\Proyecto_Blazor.csproj.CoreCompileInputs.cache
+C:\Users\Harold\Documents\GitHub\Proyecto_IIIUnidad\Aplicacion_Web2022\Proyecto_Blazor\obj\Debug\net6.0\Proyecto_Blazor.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Harold\Documents\GitHub\Proyecto_IIIUnidad\Aplicacion_Web2022\Proyecto_Blazor\obj\Debug\net6.0\Proyecto_Blazor.RazorAssemblyInfo.cache
+C:\Users\Harold\Documents\GitHub\Proyecto_IIIUnidad\Aplicacion_Web2022\Proyecto_Blazor\obj\Debug\net6.0\Proyecto_Blazor.RazorAssemblyInfo.cs
