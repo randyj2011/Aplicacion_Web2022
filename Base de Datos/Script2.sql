@@ -1,0 +1,11 @@
+SELECT * FROM mifactura.usuario
+
+
+
+
+
+
+
+
+
+

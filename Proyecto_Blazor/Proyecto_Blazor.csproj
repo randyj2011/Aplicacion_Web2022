@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -6,10 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Content Remove="Pages\MisUsuarios\Usuarios.razor" />
-  </ItemGroup>
+ 
 
+ 
 
 
   <ItemGroup>
@@ -17,23 +16,13 @@
     <ProjectReference Include="..\Modelos\Modelos.csproj" />
   </ItemGroup>
 
+ 
 
 
-  <ItemGroup>
-    <UpToDateCheckInput Remove="Pages\MisUsuarios\Usuarios.razor" />
-  </ItemGroup>
+  
+ 
 
 
-
-  <ItemGroup>
-    <_ContentIncludedByDefault Remove="Pages\MisUsuarios\Usuarios.razor" />
-  </ItemGroup>
-
-
-
-  <ItemGroup>
-    <None Include="Pages\MisUsuarios\Usuarios.razor" />
-  </ItemGroup>
 
 
 

@@ -53,12 +53,12 @@ namespace Proyecto_Blazor.Controllers
                     }
                     else
                     {
-                        return LocalRedirect("/login/El usuario no esta activo");
+                        return LocalRedirect("/login/El usuario no esta activo. Intente de nuevo");
                     }
                 }
                 else
                 {
-                    return LocalRedirect("/login/Datos de usuario invalidos");
+                    return LocalRedirect("/login/Usuario no Encontrado. Intente de nuevo");
 
                 }
             }

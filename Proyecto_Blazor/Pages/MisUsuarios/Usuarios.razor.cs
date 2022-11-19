@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Modelos;
 using Proyecto_Blazor.Interfaces;
+using System.Threading.Tasks.Sources;
 
 namespace Proyecto_Blazor.Pages.MisUsuarios
 {
@@ -12,7 +13,9 @@ namespace Proyecto_Blazor.Pages.MisUsuarios
 
         protected override async Task OnInitializedAsync()
         {
-            lista = await usuarioServicio.GetLista();
+            lista= await usuarioServicio.GetLista();
+
         }
+       
     }
 }
