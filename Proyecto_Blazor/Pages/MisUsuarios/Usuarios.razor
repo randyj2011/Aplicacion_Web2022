@@ -1,0 +1,20 @@
+﻿@page "/Usuarios"
+
+<AuthorizeView Roles="Administrador">
+    <Authorized Context"AuthenticationState">
+
+        <h2>Lista de Usuarios</h2>
+
+        @if(lista ==null)
+        {
+            <p>No existen usuarios en el sistema</p>
+
+        }
+        else
+        {
+            
+        }
+
+    </Authorized>
+
+</AuthorizeView>
