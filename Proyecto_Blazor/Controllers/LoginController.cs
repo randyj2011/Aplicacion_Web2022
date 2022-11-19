@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Mvc;
 using Modelos;
-using Org.BouncyCastle.Crypto;
+
 using System.Security.Claims;
 
 namespace Proyecto_Blazor.Controllers

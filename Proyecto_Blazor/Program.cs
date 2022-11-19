@@ -1,5 +1,4 @@
-using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Proyecto_Blazor;
 using Proyecto_Blazor.Interfaces;
 using Proyecto_Blazor.Servicios;
@@ -14,6 +13,7 @@ Config cadenaConexion = new Config(builder.Configuration.GetConnectionString("My
 builder.Services.AddSingleton(cadenaConexion);
 
 builder.Services.AddScoped<ILoginServicio, LoginServicio>();
+builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie();
 
 
 var app = builder.Build();
