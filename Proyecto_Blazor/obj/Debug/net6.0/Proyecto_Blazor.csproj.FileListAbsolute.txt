@@ -54,3 +54,4 @@ C:\Users\Harold\Documents\GitHub\Proyecto_IIIUnidad\Aplicacion_Web2022\Proyecto_
 C:\Users\Harold\Documents\GitHub\Proyecto_IIIUnidad\Aplicacion_Web2022\Proyecto_Blazor\obj\Debug\net6.0\Proyecto_Blazor.pdb
 C:\Users\Harold\Documents\GitHub\Proyecto_IIIUnidad\Aplicacion_Web2022\Proyecto_Blazor\obj\Debug\net6.0\Proyecto_Blazor.genruntimeconfig.cache
 C:\Users\Harold\Documents\GitHub\Proyecto_IIIUnidad\Aplicacion_Web2022\Proyecto_Blazor\obj\Debug\net6.0\ref\Proyecto_Blazor.dll
+C:\Users\Harold\Documents\GitHub\Proyecto_IIIUnidad\Aplicacion_Web2022\Proyecto_Blazor\bin\Debug\net6.0\CurrieTechnologies.Razor.SweetAlert2.dll

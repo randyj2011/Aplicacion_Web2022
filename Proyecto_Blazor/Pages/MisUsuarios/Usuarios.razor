@@ -33,9 +33,8 @@
                 <tbody>
                     @foreach(Usuario user in lista)
                     {
-                        @if(user.Rol =="Administrador")
-                        {
-                            <tr style="background-color:beige;">
+                        
+                            <tr>
                                 <td>@user.Codigo</td>
                                 <td>@user.Nombre</td>
                                 <td>@user.Correo</td>
@@ -56,36 +55,7 @@
                                 }
 
                             </tr>
-                        }
-                        else
-                        {
-                            @if (user.Rol == "Administrador")
-                            {
-                                <tr>
-                                    <td>@user.Codigo</td>
-                                    <td>@user.Nombre</td>
-                                    <td>@user.Correo</td>
-                                    <td>@user.Rol</td>
-                                    @if (user.EstaActivo)
-                                    {
-                                        <td>
-
-
-                                            <span class="oi oi-circle-check" style="color:lawngreen;"></span>
-                                        </td>
-                                    }
-                                    else
-                                    {
-                                        <td>
-                                            <span class="oi oi-circle-x" style="color:darkred;"></span>
-                                        </td>
-                                    }
-
-                                </tr>
-                            }
-                        }
-                       
-                    }
+                       }
                 </tbody>
             </table>
         }

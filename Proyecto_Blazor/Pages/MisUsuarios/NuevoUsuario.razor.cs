@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using CurrieTechnologies.Razor.SweetAlert2;
+using Microsoft.AspNetCore.Components;
 using Modelos;
 using Proyecto_Blazor.Interfaces;
 
@@ -11,6 +12,8 @@ namespace Proyecto_Blazor.Pages.MisUsuarios
         [Inject] private NavigationManager navigationManager { get; set; }
         private Usuario user = new Usuario();
 
+        [Inject]  SweetAlertService Swal { get; set; }
+
         protected async void Guardar()
         {
             if (string.IsNullOrEmpty(user.Codigo) || string.IsNullOrEmpty(user.Nombre) || string.IsNullOrEmpty(user.Clave) || string.IsNullOrEmpty(user.Rol) || user.Rol =="Seleccionar")
@@ -19,6 +22,16 @@ namespace Proyecto_Blazor.Pages.MisUsuarios
             }
 
             bool inserto = await usuarioServicio.Nuevo(user);
+
+            if (inserto)
+            {
+                await Swal.FireAsync("Felicidades", "Usuario Guardado", SweetAlertIcon.Success);
+
+            }
+            else
+            {
+                await Swal.FireAsync("Error", "No se pudo guardar el usuario", SweetAlertIcon.Error);
+            }
 
             navigationManager.NavigateTo("/Usuarios");
         }
