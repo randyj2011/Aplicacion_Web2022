@@ -16,7 +16,7 @@ namespace Proyecto_Blazor.Pages.MisUsuarios
 
         protected async void Guardar()
         {
-            if (string.IsNullOrEmpty(user.Codigo) || string.IsNullOrEmpty(user.Nombre) || string.IsNullOrEmpty(user.Clave) || string.IsNullOrEmpty(user.Rol) || user.Rol =="Seleccionar")
+            if (string.IsNullOrEmpty(user.Codigo) || string.IsNullOrEmpty(user.Nombre) || string.IsNullOrEmpty(user.Clave) || string.IsNullOrEmpty(user.ROL) || user.ROL =="Seleccionar")
             {
                 return;
             }

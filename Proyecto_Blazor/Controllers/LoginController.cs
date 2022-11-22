@@ -36,7 +36,7 @@ namespace Proyecto_Blazor.Controllers
                     Usuario user = await _usuarioRepositorio.GetPorCodigo(login.Codigo);
                     if (user.EstaActivo)
                     {
-                        rol = user.Rol;
+                        rol = user.ROL;
 
                         var claims = new[]
                         {
